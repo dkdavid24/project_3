@@ -23,4 +23,6 @@ int compareNamePtr(const void *, const void *);
 
 char *nameToStr(Name);
 
+void freeName(Name);
+
 #endif //PROJECT_3_NAME_H
