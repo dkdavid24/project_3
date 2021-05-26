@@ -4,7 +4,7 @@
 
 #include "BinaryTree.h"
 
-Root* create(){
+Root* createRoot(){
     Root* newRoot=(Root*)malloc(sizeof(Root));
     newRoot->right=NULL;
     newRoot->left=NULL;
@@ -12,35 +12,35 @@ Root* create(){
     return newRoot;
 }
 
-Root* insert(Root* root,Name name){
+Root* insertInTree(Root* root,Name name){
     if(root==NULL){
-        root=create();
+        root=createRoot();
         root->name=name;
         return root;
     }
 
     if(compareName(root->name,name)>0){
-        root->left=insert(root->left,name);
+        root->left=insertInTree(root->left,name);
     }
 
     else if(compareName(root->name,name)<0){
-        root->right=insert(root->right,name);
+        root->right=insertInTree(root->right,name);
     }
 
     return root;
 }
 
-bool search(Root* root,Name name){
+bool searchInTree(Root* root,Name name){
     if(root==NULL){
         return false;
     }
 
     if(compareName(root->name,name)>0){
-        return search(root->left,name);
+        return searchInTree(root->left,name);
     }
 
     if(compareName(root->name,name)<0){
-        return search(root->right,name);
+        return searchInTree(root->right,name);
     }
 
     return true;
