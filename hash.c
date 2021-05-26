@@ -9,7 +9,7 @@ hash createTable(int capacity){
     tabla.currentSize=0;
     tabla.names=(Name*)malloc(capacity*sizeof(Name));
     for(int i=0;i<tabla.capacity;i++){
-        tabla.names[i].firstName='/0';
+        tabla.names[i].firstName='\0';
     }
     return tabla;
 }
@@ -22,7 +22,7 @@ void insertTable(hash *tabla, Name name){
     }
     do{
         j=(sz+i)%(*tabla).capacity;
-        if((*tabla).names[j].firstName=='/0'){
+        if((*tabla).names[j].firstName=='\0'){
             (*tabla).names[j]=name;
             (*tabla).currentSize++;
             return;
@@ -36,14 +36,14 @@ void deleteHash(hash *table, Name name){
     do{
         j=(sz+i)%(*table).capacity;
         if((strlen((*table).names[j].firstName) + strlen((*table).names[j].lastName)) == sz){
-            (*table).names[j].firstName='/0';
-            (*table).names[j].lastName='/0';
+            (*table).names[j].firstName='\0';
+            (*table).names[j].lastName='\0';
             return;
         }
         else{
             i++;
         }
-    }while((*table).names[j].firstName != '/0' && i <= (*table).capacity);
+    }while((*table).names[j].firstName != '\0' && i <= (*table).capacity);
     if(i!=(*table).capacity){
         printf("There is no such a person on the list");
     }
@@ -59,12 +59,12 @@ bool searchHash(hash *tabla, Name name){
         else{
             i++;
         }
-    }while((*tabla).names[j].firstName!='/0' && i<=(*tabla).capacity);
+    }while((*tabla).names[j].firstName!='\0' && i<=(*tabla).capacity);
     return false;
 }
 void listTable(hash *table){
     for(int i=0;i<table->capacity;i++){
-        if(table->names[i].firstName!='/0'){
+        if(table->names[i].firstName!='\0'){
             printf("Name:%s %s\n",table->names[i].firstName,table->names[i].lastName);
 
         }
