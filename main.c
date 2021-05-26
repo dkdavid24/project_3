@@ -1,10 +1,19 @@
 #include "name.h"
+#include "linked_list.h"
+
+#define endl printf("\n")
 
 int main() {
-    Name name1 = createName("first", "last");
-    Name name2 = createName("firs", "last");
-    printf("%i\n", compareName(name1, name2));
-    printf("%s\n", nameToStr(name1));
-    printf("%s\n", nameToStr(name2));
+    Node *root = NULL;
+    insertList(&root, createName("First", "Name"));
+    insertList(&root, createName("2nd", "Name"));
+    insertList(&root, createName("3rd", "Name"));
+    utilPrintList(root);
+    endl;
+    deleteFromList(&root, createName("2nd", "Name"));
+    utilPrintList(root);
+    endl;
+    deleteFromList(&root, createName("3rd", "Name"));
+    utilPrintList(root);
     return 0;
 }

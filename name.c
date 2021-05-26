@@ -38,3 +38,8 @@ char *nameToStr(Name name) {
     res[strlen(name.firstName) + 1 + strlen(name.lastName)] = '\0';
     return res;
 }
+
+void freeName(Name name) {
+    free(name.firstName);
+    free(name.lastName);
+}

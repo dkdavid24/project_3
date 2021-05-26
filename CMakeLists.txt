@@ -3,4 +3,4 @@ project(project_3 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(project_3 main.c BinaryTree.c BinaryTree.h Heap.c Heap.h name.h name.c)
+add_executable(project_3 main.c linked_list.c linked_list.h BinaryTree.c BinaryTree.h name.h name.c)
