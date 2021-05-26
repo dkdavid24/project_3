@@ -20,5 +20,9 @@ typedef struct Root{
 
 Root* create();
 Root* insert(Root*,Name);
+bool search(Root* root,Name);
+Root* delete(Root*,Name);
+Root* first(Root*);
+void printTree(Root*);
 
 #endif //PROJECT_3_BINARYTREE_H
