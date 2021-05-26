@@ -35,3 +35,53 @@ void up(Heap* heap,int index){
         index=(index-1)/2;
     }
 }
+
+void down(Heap* heap,int index){
+    Name temp;
+    int tempIndex;
+
+    while(2*index+1<heap->size){
+        tempIndex=2*index+1;
+        if(tempIndex<heap->size && compareName(heap->names[tempIndex],heap->names[tempIndex+1])<0){
+            tempIndex++;
+        }
+        if(compareName(heap->names[tempIndex],heap->names[index])<=0){
+            return;
+        }
+        temp=heap->names[index];
+        heap->names[index]=heap->names[tempIndex];
+        heap->names[tempIndex]=temp;
+        index=tempIndex;
+    }
+}
+
+int searchInHeap(Heap* heap,Name name){
+    for(int i=0;i<heap->size;i++){
+        if(compareName(heap->names[i],name)==0){
+            return i;
+        }
+    }
+    return -1;
+}
+
+Heap* deleteFromHeap(Heap* heap,Name name){
+    int index=searchInHeap(heap,name);
+
+    if(index==-1){
+        return heap;
+    }
+
+    heap->names[index]=heap->names[heap->size-1];
+    heap->size--;
+    heap->names=(Name*)realloc(heap->names,heap->size*sizeof(Name));
+    down(heap,index);
+
+    return heap;
+}
+
+void printHeap(Heap* heap){
+    for(int i=0;i<heap->size;i++){
+        printf("%s\n",nameToStr(heap->names[i]));
+    }
+    printf("\n");
+}

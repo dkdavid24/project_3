@@ -19,8 +19,8 @@ typedef struct{
 
 Heap* createHeap();
 Heap* insertInHeap(Heap*,Name);
-int deleteFromHeap(Heap**);
-bool searchInHeap(Heap*,Name);
+Heap* deleteFromHeap(Heap*,Name);
+int searchInHeap(Heap*,Name);
 void up(Heap*,int);
 void down(Heap*,int);
 void printHeap(Heap*);
