@@ -11,9 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/name.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/name.h" afterDir="false" />
+    <list default="true" id="a7106da7-30b2-4a94-bf9e-e8d0cae93221" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/array.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/array.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hash.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hash.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
@@ -35,8 +37,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1saLC3wM0btuu3rcIbPDIJhfVTi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1t3uyTq1dLiaADKzyCPacpAlUKP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,11 +47,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Labor13Adatstruktura" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="project_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project_3" TARGET_NAME="project_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project_3" RUN_TARGET_NAME="project_3">
@@ -67,36 +75,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="" />
-      <created>1621105624499</created>
+      <changelist id="a7106da7-30b2-4a94-bf9e-e8d0cae93221" name="Default Changelist" comment="" />
+      <created>1622010350857</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1621105624499</updated>
-      <workItem from="1621105626529" duration="1084000" />
-      <workItem from="1621942453202" duration="1648000" />
+      <updated>1622010350857</updated>
+      <workItem from="1622010353280" duration="4958000" />
+      <workItem from="1622022252526" duration="6519000" />
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1621105799401</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1621105799401</updated>
-    </task>
-    <task id="LOCAL-00002" summary="initial commit">
-      <created>1621105862462</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1621105862462</updated>
-    </task>
-    <task id="LOCAL-00003" summary="initial commit">
-      <created>1621105940158</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1621105940158</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,9 +98,22 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>20</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="res-&gt;names[res-&gt;size]" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

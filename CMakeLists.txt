@@ -3,4 +3,4 @@ project(project_3 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(project_3 main.c name.c name.h)
+add_executable(project_3 main.c name.c name.h array.c array.h hash.c hash.h)
