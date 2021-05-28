@@ -12,7 +12,7 @@ int main() {
 //    printf("%i\n", compareName(name1, name2));
 //    printf("%s\n", nameToStr(name1));
 //    printf("%s\n", nameToStr(name2));
-//    Array array=createArray();
+//    Array array=createArray(20);
 //    addName(&array,name1);
 //    addName(&array,name2);
 //    addName(&array,name3);

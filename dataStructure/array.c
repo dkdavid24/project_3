@@ -4,18 +4,14 @@
 
 #include "array.h"
 
-Array createArray(){
+Array createArray(int size){
     Array res;
-    res.size=50;
+    res.size=size;
     res.count=0;
-    res.names=(Name*)malloc((res.size)*sizeof(Name));
+    res.names=(Name*)malloc((res.size+1)*sizeof(Name));
     return res;
 }
 void addName(Array *res,Name name){
-    if(res->count==res->size){
-        res->size=2*res->size;
-        res->names=(Name*)realloc(res->names,res->size*(sizeof(Name)));
-    }
     res->names[res->count]=name;
     res->count++;
 
