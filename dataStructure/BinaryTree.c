@@ -46,16 +46,16 @@ bool searchInTree(Root* root,Name name){
     return true;
 }
 
-Root* delete(Root* root,Name name){
+Root* deleteFromTree(Root* root,Name name){
     if(root==NULL){
         return root;
     }
 
     if(compareName(root->name,name)>0){
-        root->left=delete(root->left,name);
+        root->left=deleteFromTree(root->left,name);
     }
     else if(compareName(root->name,name)<0){
-        root->right=delete(root->right,name);
+        root->right=deleteFromTree(root->right,name);
     }
     else{
         if(root->left==NULL){
@@ -71,7 +71,7 @@ Root* delete(Root* root,Name name){
 
         Root* temp=first(root->right);
         root->name=temp->name;
-        root->right=delete(root->right,temp->name);
+        root->right=deleteFromTree(root->right,temp->name);
     }
 
     return root;

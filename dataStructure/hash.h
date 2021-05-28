@@ -4,7 +4,7 @@
 
 #ifndef PROJECT_3_HASH_H
 #define PROJECT_3_HASH_H
-#include "name.h"
+#include "../name.h"
 #include <stdbool.h>
 typedef struct hashtable{
     Name *names;

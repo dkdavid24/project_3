@@ -11,8 +11,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="initial commit">
+    <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="\0 correction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/BinaryTree.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/BinaryTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Heap.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/Heap.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/Heap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/array.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/hash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/linked_list.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/linked_list.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +54,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Projekt2" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Adatstrukturak\project_3" />
+      <recent name="D:\Adatstrukturak\project_3\dataStructure" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -54,11 +81,6 @@
     <configuration name="project_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project_3" TARGET_NAME="project_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project_3" RUN_TARGET_NAME="project_3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -72,6 +94,8 @@
       <updated>1621105624499</updated>
       <workItem from="1621105626529" duration="1084000" />
       <workItem from="1621942453202" duration="1648000" />
+      <workItem from="1622042466726" duration="1736000" />
+      <workItem from="1622214959431" duration="3933000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621105799401</created>
@@ -94,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621105940158</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="\0 correction">
+      <created>1622042771526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622042771526</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="\0 correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="\0 correction" />
   </component>
 </project>
