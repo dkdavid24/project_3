@@ -85,7 +85,7 @@
       <workItem from="1621942453202" duration="1648000" />
       <workItem from="1622042466726" duration="1736000" />
       <workItem from="1622214959431" duration="3933000" />
-      <workItem from="1622278359254" duration="7154000" />
+      <workItem from="1622278359254" duration="9204000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621105799401</created>
@@ -129,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622285972864</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed issues from merge conflict">
+      <created>1622286548157</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622286548157</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed hash">
+      <created>1622288529050</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622288529050</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +166,7 @@
     <MESSAGE value="\0 correction" />
     <MESSAGE value="started utils" />
     <MESSAGE value="fixed issues from merge conflict" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed issues from merge conflict" />
+    <MESSAGE value="fixed hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed hash" />
   </component>
 </project>

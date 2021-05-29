@@ -28,20 +28,20 @@ void setName(Name *dest, Name src) {
 }
 
 int compareName(Name name1, Name name2) {
-    if (strcmp(name1.lastName, name2.lastName) == 0) {
-        return strcmp(name1.firstName, name2.firstName);
+    if (strcmp(name1.firstName, name2.firstName) == 0) {
+        return strcmp(name1.lastName, name2.lastName);
     }
-    return strcmp(name1.lastName, name2.lastName);
+    return strcmp(name1.firstName, name2.firstName);
 }
 
 /** for qsort */
 int compareNamePtr(const void *ptr1, const void *ptr2) {
     Name name1 = *(Name *) ptr1;
     Name name2 = *(Name *) ptr2;
-    if (strcmp(name1.lastName, name2.lastName) == 0) {
-        return strcmp(name1.firstName, name2.firstName);
+    if (strcmp(name1.firstName, name2.firstName) == 0) {
+        return strcmp(name1.lastName, name2.lastName);
     }
-    return strcmp(name1.lastName, name2.lastName);
+    return strcmp(name1.firstName, name2.firstName);
 }
 
 char *nameToStr(Name name) {

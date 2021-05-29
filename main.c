@@ -7,11 +7,7 @@ int main() {
     hash hashTable;
     Heap *heap;
     List *list;
-    printf("Time: %lf\n", timeToInsert("input.txt", HASH, &array, &hashTable, &root, &heap, &list));
-    listTable(&hashTable);
-    printf("\n%i\n", searchHash(&hashTable, createName("test test", "test 6")));
-    printf("\n%i\n", searchHash(&hashTable, createName("test test", "test 12")));
-    deleteHash(&hashTable, createName("test test", "test 6"));
-    printf("\n%i\n", searchHash(&hashTable, createName("test test", "test 6")));
+    printf("Time: %lf\n", timeToInsert("input.txt", BINARY_TREE, &array, &hashTable, &root, &heap, &list));
+    printTree(root);
     return 0;
 }
