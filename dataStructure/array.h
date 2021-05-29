@@ -11,7 +11,7 @@ typedef struct arr{
     int size;
     Name *names;
 }Array;
-Array createArray();
+Array createArray(int );
 void addName(Array *,Name );
 void deleteName(Array *,Name );
 void listName(Array *res);
