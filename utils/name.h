@@ -18,6 +18,10 @@ typedef struct {
 
 Name createName(const char *, const char *);
 
+Name emptyName();
+
+void setName(Name *, Name);
+
 int compareName(Name, Name);
 
 /** for qsort */

@@ -13,6 +13,20 @@ Name createName(const char *firstName, const char *lastName) {
     return res;
 }
 
+Name emptyName() {
+    Name res;
+    res.lastName = NULL;
+    res.firstName = NULL;
+    return res;
+}
+
+void setName(Name *dest, Name src) {
+    dest->firstName = (char *) calloc(strlen(src.firstName) + 1, sizeof(char));
+    dest->lastName = (char *) calloc(strlen(src.lastName) + 1, sizeof(char));
+    strcpy(dest->firstName, src.firstName);
+    strcpy(dest->lastName, src.lastName);
+}
+
 int compareName(Name name1, Name name2) {
     if (strcmp(name1.lastName, name2.lastName) == 0) {
         return strcmp(name1.firstName, name2.firstName);

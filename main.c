@@ -7,7 +7,11 @@ int main() {
     hash hashTable;
     Heap *heap;
     List *list;
-    printf("Time: %lf\n", timeToInsert("input.txt", ARRAY, &array, &hashTable, &root, &heap, &list));
-    listName(&array);
+    printf("Time: %lf\n", timeToInsert("input.txt", HASH, &array, &hashTable, &root, &heap, &list));
+    listTable(&hashTable);
+    printf("\n%i\n", searchHash(&hashTable, createName("test test", "test 6")));
+    printf("\n%i\n", searchHash(&hashTable, createName("test test", "test 12")));
+    deleteHash(&hashTable, createName("test test", "test 6"));
+    printf("\n%i\n", searchHash(&hashTable, createName("test test", "test 6")));
     return 0;
 }
