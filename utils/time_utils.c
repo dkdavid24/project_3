@@ -22,7 +22,7 @@ timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTabl
     int numEntries = numberOfEntries(path);
     switch (type) {
         case ARRAY: {
-            *array = createArray();
+            *array = createArray(numEntries);
             break;
         }
         case HASH: {

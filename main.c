@@ -7,7 +7,7 @@ int main() {
     hash hashTable;
     Heap *heap;
     List *list;
-    printf("Time: %lf\n", timeToInsert("input.txt", BINARY_TREE, &array, &hashTable, &root, &heap, &list));
-    printTree(root);
+    printf("Time: %lf\n", timeToInsert("input.txt", ARRAY, &array, &hashTable, &root, &heap, &list));
+    listName(&array);
     return 0;
 }
