@@ -9,6 +9,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define nameLength 30
+
 typedef struct {
     char *firstName;
     char *lastName;

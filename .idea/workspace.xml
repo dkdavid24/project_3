@@ -12,19 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="\0 correction">
+      <change afterPath="$PROJECT_DIR$/utils/time_utils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/time_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/BinaryTree.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/BinaryTree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Heap.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/Heap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/Heap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/array.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/array.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hash.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/hash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/hash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/linked_list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/linked_list.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructure/BinaryTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/BinaryTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructure/Heap.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/Heap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructure/array.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/array.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructure/hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructure/linked_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/linked_list.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataStructure/linked_list.h" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/linked_list.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/name.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/name.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/name.h" beforeDir="false" afterPath="$PROJECT_DIR$/utils/name.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Uni\2\AlgoData I\projects\project_3\utils" />
       <recent name="D:\Adatstrukturak\project_3" />
       <recent name="D:\Adatstrukturak\project_3\dataStructure" />
     </key>
@@ -73,14 +75,14 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="project_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project_3" TARGET_NAME="project_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project_3" RUN_TARGET_NAME="project_3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="project_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project_3" TARGET_NAME="project_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project_3" RUN_TARGET_NAME="project_3">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -96,6 +98,7 @@
       <workItem from="1621942453202" duration="1648000" />
       <workItem from="1622042466726" duration="1736000" />
       <workItem from="1622214959431" duration="3933000" />
+      <workItem from="1622278359254" duration="6280000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621105799401</created>

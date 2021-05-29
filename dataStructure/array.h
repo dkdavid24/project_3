@@ -4,7 +4,7 @@
 
 #ifndef PROJECT_3_ARRAY_H
 #define PROJECT_3_ARRAY_H
-#include "../name.h"
+#include "../utils/name.h"
 #include <stdbool.h>
 typedef struct arr{
     int count;

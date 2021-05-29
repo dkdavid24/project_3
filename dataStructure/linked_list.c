@@ -4,35 +4,35 @@
 
 #include "linked_list.h"
 
-Node *createListNode(Name name) {
-    Node *res = (Node *) malloc(sizeof(Node));
+List *createListNode(Name name) {
+    List *res = (List *) malloc(sizeof(List));
     res->data = name;
     res->next = NULL;
     return res;
 }
 
-void insertList(Node **rootPTR, Name name) {
+void insertList(List **rootPTR, Name name) {
     if (*rootPTR == NULL) {
         (*rootPTR) = createListNode(name);
         return;
     }
-    Node *new = createListNode(name);
+    List *new = createListNode(name);
     new->next = *rootPTR;
     *rootPTR = new;
 }
 
-void deleteFromList(Node **rootPTR, Name value) {
+void deleteFromList(List **rootPTR, Name value) {
     if (compareName((*rootPTR)->data, value) == 0) {
-        Node *temp = *rootPTR;
+        List *temp = *rootPTR;
         *rootPTR = (*rootPTR)->next;
         freeName(temp->data);
         free(temp);
         return;
     }
-    Node *p = *rootPTR;
+    List *p = *rootPTR;
     while (p->next != NULL) {
         if (compareName(p->next->data, value) == 0) {
-            Node *temp = p->next;
+            List *temp = p->next;
             p->next = p->next->next;
             freeName(temp->data);
             free(temp);
@@ -42,8 +42,8 @@ void deleteFromList(Node **rootPTR, Name value) {
     }
 }
 
-bool inList(Node *root, Name value) {
-    Node *p = root;
+bool inList(List *root, Name value) {
+    List *p = root;
     while (p != NULL) {
         if (compareName(p->data, value) == 0) {
             return true;
@@ -53,8 +53,8 @@ bool inList(Node *root, Name value) {
     return false;
 }
 
-Node *getList(Node *root, Name value) {
-    Node *p = root;
+List *getList(List *root, Name value) {
+    List *p = root;
     while (p != NULL) {
         if (compareName(p->data, value) == 0) {
             return p;
@@ -64,8 +64,8 @@ Node *getList(Node *root, Name value) {
     return NULL;
 }
 
-void utilPrintList(Node *root) {
-    Node *p = root;
+void utilPrintList(List *root) {
+    List *p = root;
     while (p != NULL) {
         printf("%s\n", nameToStr(p->data));
         p = p->next;

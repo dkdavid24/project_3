@@ -8,26 +8,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "../name.h"
+#include "../utils/name.h"
 
 
-typedef struct NODE {
+typedef struct NODE_LIST {
     Name data;
-    struct NODE *next;
-} Node;
+    struct NODE_LIST *next;
+} List;
 
-Node *createListNode(Name);
+List *createListNode(Name);
 
-void insertList(Node **, Name);
+void insertList(List **, Name);
 
-bool inList(Node *, Name);
+bool inList(List *, Name);
 
 /** not tested */
-Node *getList(Node *, Name);
+List *getList(List *, Name);
 
-void deleteFromList(Node **, Name);
+void deleteFromList(List **, Name);
 
-void utilPrintList(Node *);
+void utilPrintList(List *);
 
 
 #endif //PROJECT_3_LINKED_LIST_H

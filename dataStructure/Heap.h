@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include "../name.h"
+#include "../utils/name.h"
 
 typedef struct{
     Name* names;
