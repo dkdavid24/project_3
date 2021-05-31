@@ -23,6 +23,7 @@ Root* insertInTree(Root*,Name);
 bool searchInTree(Root* root,Name);
 Root* deleteFromTree(Root*,Name);
 Root* first(Root*);
+Root* getTreeElement(Root*,Name);
 void printTree(Root*);
 
 #endif //PROJECT_3_BINARYTREE_H

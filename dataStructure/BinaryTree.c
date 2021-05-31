@@ -89,6 +89,22 @@ Root* first(Root* root){
     return root;
 }
 
+Root* getTreeElement(Root* root,Name name){
+    if(root==NULL){
+        return root;
+    }
+
+    if(compareName(root->name,name)>0){
+        return getTreeElement(root->left,name);
+    }
+
+    if(compareName(root->name,name)<0){
+        return getTreeElement(root->right,name);
+    }
+
+    return root;
+}
+
 void printTree(Root* root){
     if(root==NULL){
         return;

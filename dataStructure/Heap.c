@@ -4,21 +4,21 @@
 
 #include "Heap.h"
 
-Heap* createHeap(){
+Heap* createHeap(int capacity){
     Heap* newHeap=(Heap*)malloc(sizeof(Heap));
+    newHeap->capacity=capacity;
     newHeap->size=0;
-    newHeap->names=(Name*)malloc(newHeap->size*sizeof(Name));
+    newHeap->names=(Name*)malloc(newHeap->capacity*sizeof(Name));
 
     return newHeap;
 }
 
 Heap* insertInHeap(Heap* heap,Name name){
-    if(heap==NULL){
-        heap=createHeap();
+    if(heap==NULL || heap->size==heap->capacity){
+        return heap;
     }
 
     heap->size++;
-    heap->names=(Name*)realloc(heap->names,heap->size*sizeof(Name));
     heap->names[heap->size-1]=name;
     up(heap,heap->size-1);
 
@@ -55,17 +55,17 @@ void down(Heap* heap,int index){
     }
 }
 
-int searchInHeap(Heap* heap,Name name){
+bool searchInHeap(Heap* heap,Name name){
     for(int i=0;i<heap->size;i++){
         if(compareName(heap->names[i],name)==0){
-            return i;
+            return true;
         }
     }
-    return -1;
+    return false;
 }
 
 Heap* deleteFromHeap(Heap* heap,Name name){
-    int index=searchInHeap(heap,name);
+    int index=getHeapElement(heap,name);
 
     if(index==-1){
         return heap;
@@ -73,10 +73,18 @@ Heap* deleteFromHeap(Heap* heap,Name name){
 
     heap->names[index]=heap->names[heap->size-1];
     heap->size--;
-    heap->names=(Name*)realloc(heap->names,heap->size*sizeof(Name));
     down(heap,index);
 
     return heap;
+}
+
+int getHeapElement(Heap* heap,Name name){
+    for(int i=0;i<heap->size;i++){
+        if(compareName(heap->names[i],name)==0){
+            return i;
+        }
+    }
+    return -1;
 }
 
 void printHeap(Heap* heap){

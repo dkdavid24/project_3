@@ -14,15 +14,17 @@
 typedef struct{
     Name* names;
     int size;
+    int capacity;
 
 }Heap;
 
-Heap* createHeap();
+Heap* createHeap(int);
 Heap* insertInHeap(Heap*,Name);
 Heap* deleteFromHeap(Heap*,Name);
-int searchInHeap(Heap*,Name);
+bool searchInHeap(Heap*,Name);
 void up(Heap*,int);
 void down(Heap*,int);
+int getHeapElement(Heap*,Name);
 void printHeap(Heap*);
 
 #endif //PROJECT_3_HEAP_H
