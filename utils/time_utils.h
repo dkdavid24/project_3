@@ -28,4 +28,6 @@ int numberOfEntries(const char *);
 
 double timeToInsert(const char *, dataStructures, Array *, hash*, Root **, Heap **, List **);
 
+double timeToSearch(const char *, dataStructures, Array *, hash*, Root **, Heap **, List **);
+
 #endif //PROJECT_3_TIME_UTILS_H
