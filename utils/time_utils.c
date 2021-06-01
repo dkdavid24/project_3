@@ -8,22 +8,17 @@ int numberOfEntries(const char *path) {
     FILE *fin = fopen(path, "rt");
     if (!fin) {
         printf("\nMissing file: %s\n", path);
-        return 0;
     }
-    int res = -1;
+    int res = 0;
     char line[60];
     for (; fscanf(fin, "%[^\n]\n", line) != EOF; res++);
     fclose(fin);
     return res;
 }
 
-double
-timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree, Heap **heap,
+double timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree, Heap **heap,
              List **linkedList) {
     int numEntries = numberOfEntries(path);
-    if (numEntries == -1) {
-        return -1;
-    }
     switch (type) {
         case ARRAY: {
             *array = createArray(numEntries);
@@ -52,12 +47,12 @@ timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTabl
     FILE *fin = fopen(path, "rt");
     if (!fin) {
         printf("\nMissing file: %s\n", path);
-        return -1;
     }
     char firstName[nameLength], lastName[nameLength];
     clock_t begin = clock();
     for (int i = 0; i < numEntries; i++) {
         fscanf(fin, "%[^,],%[^\n]\n", firstName, lastName);
+        //fscanf(fin, "%[^ ] %[^\n]\n", firstName, lastName);
         switch (type) {
             case ARRAY: {
                 addName(array, createName(firstName, lastName));
@@ -79,6 +74,10 @@ timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTabl
                 insertList(linkedList, createName(firstName, lastName));
                 break;
             }
+            default:{
+                printf("Unknown type: %i\n", type);
+                return 0;
+            }
         }
     }
     clock_t end = clock();
@@ -87,16 +86,12 @@ timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTabl
 }
 
 double timeToSearch(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree,
-                    Heap **heap, List **linkedList) {
+                    Heap **heap,List **linkedList){
     int numEntries = numberOfEntries(path);
-    if (numEntries == -1) {
-        return -1;
-    }
 
     FILE *fin = fopen(path, "rt");
     if (!fin) {
         printf("\nMissing file: %s\n", path);
-        return -1;
     }
     char firstName[nameLength], lastName[nameLength];
     clock_t begin = clock();
@@ -123,6 +118,10 @@ double timeToSearch(const char *path, dataStructures type, Array *array, hash *h
                 inList(*linkedList, createName(firstName, lastName));
                 break;
             }
+            default:{
+                printf("Unknown type: %i\n", type);
+                return 0;
+            }
         }
     }
 
@@ -130,18 +129,13 @@ double timeToSearch(const char *path, dataStructures type, Array *array, hash *h
     fclose(fin);
     return (double) (end - begin) / CLOCKS_PER_SEC;
 }
-
 double timeToDelete(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree,
-                    Heap **heap, List **linkedList) {
+                    Heap **heap,List **linkedList){
     int numEntries = numberOfEntries(path);
-    if (numEntries == -1) {
-        return -1;
-    }
 
     FILE *fin = fopen(path, "rt");
     if (!fin) {
         printf("\nMissing file: %s\n", path);
-        return -1;
     }
     char firstName[nameLength], lastName[nameLength];
     clock_t begin = clock();
@@ -158,16 +152,20 @@ double timeToDelete(const char *path, dataStructures type, Array *array, hash *h
                 break;
             }
             case BINARY_TREE: {
-                *binaryTree = deleteFromTree(*binaryTree, createName(firstName, lastName));
+                deleteFromTree(*binaryTree, createName(firstName, lastName));
                 break;
             }
             case HEAP: {
-                *heap = deleteFromHeap(*heap, createName(firstName, lastName));
+                deleteFromHeap(*heap, createName(firstName, lastName));
                 break;
             }
             case LINKED_LIST: {
-                deleteFromList(linkedList, createName(firstName, lastName));
+                deleteFromList(*linkedList, createName(firstName, lastName));
                 break;
+            }
+            default:{
+                printf("Unknown type: %i\n", type);
+                return 0;
             }
         }
     }
