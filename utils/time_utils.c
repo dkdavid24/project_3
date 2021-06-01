@@ -160,7 +160,7 @@ double timeToDelete(const char *path, dataStructures type, Array *array, hash *h
                 break;
             }
             case LINKED_LIST: {
-                deleteFromList(*linkedList, createName(firstName, lastName));
+                deleteFromList(linkedList, createName(firstName, lastName));
                 break;
             }
             default:{

@@ -47,7 +47,7 @@ void deleteHash(hash *table, Name name) {
         i++;
     } while ((*table).names[j].firstName != NULL && i <= (*table).capacity);
     if (i != (*table).capacity) {
-        printf("There is no such a person on the list");
+//        printf("There is no such a person on the list");
     }
 }
 
