@@ -9,9 +9,5 @@ int main() {
     List *list;
     printf("Time: %lf\n", timeToInsert("input.txt", ARRAY, &array, &hashTable, &root, &heap, &list));
     listName(&array);
-    printf("\n");
-    printf("Time: %lf\n", timeToDelete("input2.txt", ARRAY, &array, &hashTable, &root, &heap, &list));
-    listName(&array);
-
     return 0;
 }
