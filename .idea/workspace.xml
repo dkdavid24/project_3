@@ -11,9 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="\0 correction">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/time_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/time_utils.c" afterDir="false" />
+    <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="Kereses.txt+Torles.txt+defaults">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Kereses.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Torles.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622042771526</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Kereses.txt+Torles.txt+defaults">
+      <created>1622545194949</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622545194949</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="\0 correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="\0 correction" />
+    <MESSAGE value="Kereses.txt+Torles.txt+defaults" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kereses.txt+Torles.txt+defaults" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
