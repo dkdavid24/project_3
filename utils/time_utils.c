@@ -16,8 +16,7 @@ int numberOfEntries(const char *path) {
     return res;
 }
 
-double
-timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree, Heap **heap,
+double timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree, Heap **heap,
              List **linkedList) {
     int numEntries = numberOfEntries(path);
     switch (type) {
@@ -53,6 +52,7 @@ timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTabl
     clock_t begin = clock();
     for (int i = 0; i < numEntries; i++) {
         fscanf(fin, "%[^,],%[^\n]\n", firstName, lastName);
+        //fscanf(fin, "%[^ ] %[^\n]\n", firstName, lastName);
         switch (type) {
             case ARRAY: {
                 addName(array, createName(firstName, lastName));
@@ -136,6 +136,47 @@ double timeToSearch(const char *path, dataStructures type, Array *array, hash *h
             }
             case LINKED_LIST: {
                 inList(*linkedList, createName(firstName, lastName));
+                break;
+            }
+        }
+    }
+
+    clock_t end = clock();
+    fclose(fin);
+    return (double) (end - begin) / CLOCKS_PER_SEC;
+}
+double timeToDelete(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree,
+                    Heap **heap,List **linkedList){
+    int numEntries = numberOfEntries(path);
+
+    FILE *fin = fopen(path, "rt");
+    if (!fin) {
+        printf("\nMissing file: %s\n", path);
+    }
+    char firstName[nameLength], lastName[nameLength];
+    clock_t begin = clock();
+    for (int i = 0; i < numEntries; i++) {
+        fscanf(fin, "%[^,],%[^\n]\n", firstName, lastName);
+        //fscanf(fin, "%[^ ] %[^\n]\n", firstName, lastName);
+        switch (type) {
+            case ARRAY: {
+                deleteName(array, createName(firstName, lastName));
+                break;
+            }
+            case HASH: {
+                deleteHash(hashTable, createName(firstName, lastName));
+                break;
+            }
+            case BINARY_TREE: {
+                deleteFromTree(*binaryTree, createName(firstName, lastName));
+                break;
+            }
+            case HEAP: {
+                deleteFromHeap(*heap, createName(firstName, lastName));
+                break;
+            }
+            case LINKED_LIST: {
+                deleteFromList(*linkedList, createName(firstName, lastName));
                 break;
             }
         }

@@ -30,4 +30,7 @@ double timeToInsert(const char *, dataStructures, Array *, hash*, Root **, Heap 
 
 double timeToSearch(const char *, dataStructures, Array *, hash*, Root **, Heap **, List **);
 
+double timeToDelete(const char *, dataStructures, Array *, hash*, Root **, Heap **, List **);
+
+
 #endif //PROJECT_3_TIME_UTILS_H

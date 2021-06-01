@@ -13,6 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="\0 correction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/time_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/utils/time_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/time_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/utils/time_utils.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +54,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Uni\2\AlgoData I\projects\project_3\utils" />
+      <recent name="D:\Adatstrukturak\project_3\cmake-build-debug" />
       <recent name="D:\Adatstrukturak\project_3" />
       <recent name="D:\Adatstrukturak\project_3\dataStructure" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="project_3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="project_3" TARGET_NAME="project_3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="project_3" RUN_TARGET_NAME="project_3">
@@ -85,7 +88,6 @@
       <workItem from="1621942453202" duration="1648000" />
       <workItem from="1622042466726" duration="1736000" />
       <workItem from="1622214959431" duration="3933000" />
-      <workItem from="1622278359254" duration="9204000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621105799401</created>
@@ -115,35 +117,7 @@
       <option name="project" value="LOCAL" />
       <updated>1622042771526</updated>
     </task>
-    <task id="LOCAL-00005" summary="started utils">
-      <created>1622285673377</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1622285673377</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fixed issues from merge conflict">
-      <created>1622285972864</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622285972864</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fixed issues from merge conflict">
-      <created>1622286548157</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1622286548157</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fixed hash">
-      <created>1622288529050</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1622288529050</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,9 +138,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="\0 correction" />
-    <MESSAGE value="started utils" />
-    <MESSAGE value="fixed issues from merge conflict" />
-    <MESSAGE value="fixed hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="\0 correction" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
