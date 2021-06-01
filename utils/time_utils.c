@@ -16,7 +16,8 @@ int numberOfEntries(const char *path) {
     return res;
 }
 
-double timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree, Heap **heap,
+double
+timeToInsert(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree, Heap **heap,
              List **linkedList) {
     int numEntries = numberOfEntries(path);
     switch (type) {
@@ -74,7 +75,7 @@ double timeToInsert(const char *path, dataStructures type, Array *array, hash *h
                 insertList(linkedList, createName(firstName, lastName));
                 break;
             }
-            default:{
+            default: {
                 printf("Unknown type: %i\n", type);
                 return 0;
             }
@@ -86,7 +87,7 @@ double timeToInsert(const char *path, dataStructures type, Array *array, hash *h
 }
 
 double timeToSearch(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree,
-                    Heap **heap,List **linkedList){
+                    Heap **heap, List **linkedList) {
     int numEntries = numberOfEntries(path);
 
     FILE *fin = fopen(path, "rt");
@@ -118,7 +119,7 @@ double timeToSearch(const char *path, dataStructures type, Array *array, hash *h
                 inList(*linkedList, createName(firstName, lastName));
                 break;
             }
-            default:{
+            default: {
                 printf("Unknown type: %i\n", type);
                 return 0;
             }
@@ -129,8 +130,9 @@ double timeToSearch(const char *path, dataStructures type, Array *array, hash *h
     fclose(fin);
     return (double) (end - begin) / CLOCKS_PER_SEC;
 }
+
 double timeToDelete(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree,
-                    Heap **heap,List **linkedList){
+                    Heap **heap, List **linkedList) {
     int numEntries = numberOfEntries(path);
 
     FILE *fin = fopen(path, "rt");
@@ -163,7 +165,7 @@ double timeToDelete(const char *path, dataStructures type, Array *array, hash *h
                 deleteFromList(linkedList, createName(firstName, lastName));
                 break;
             }
-            default:{
+            default: {
                 printf("Unknown type: %i\n", type);
                 return 0;
             }
@@ -173,4 +175,21 @@ double timeToDelete(const char *path, dataStructures type, Array *array, hash *h
     clock_t end = clock();
     fclose(fin);
     return (double) (end - begin) / CLOCKS_PER_SEC;
+}
+
+char *dataStructureToStr(dataStructures ds) {
+    switch (ds) {
+        case ARRAY:
+            return "array";
+        case BINARY_TREE:
+            return "binary tree";
+        case HASH:
+            return "hash table";
+        case HEAP:
+            return "heap";
+        case LINKED_LIST:
+            return "linked";
+        default:
+            return "Unknown";
+    }
 }

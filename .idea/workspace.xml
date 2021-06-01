@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="\0 correction">
-      <change beforePath="$PROJECT_DIR$/dataStructure/hash.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataStructure/hash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-    </list>
+    <list default="true" id="961d6d1e-23c2-472a-b6d8-c7e99add9b1c" name="Default Changelist" comment="\0 correction" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622545194949</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixes">
+      <created>1622547180566</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622547180566</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +143,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="\0 correction" />
     <MESSAGE value="Kereses.txt+Torles.txt+defaults" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kereses.txt+Torles.txt+defaults" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
 </project>

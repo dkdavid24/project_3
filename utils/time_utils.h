@@ -32,5 +32,6 @@ double timeToSearch(const char *, dataStructures, Array *, hash*, Root **, Heap 
 
 double timeToDelete(const char *, dataStructures, Array *, hash*, Root **, Heap **, List **);
 
+char* dataStructureToStr(dataStructures);
 
 #endif //PROJECT_3_TIME_UTILS_H
