@@ -84,31 +84,7 @@ double timeToInsert(const char *path, dataStructures type, Array *array, hash *h
 double timeToSearch(const char *path, dataStructures type, Array *array, hash *hashTable, Root **binaryTree,
                     Heap **heap,List **linkedList){
     int numEntries = numberOfEntries(path);
-    switch (type) {
-        case ARRAY: {
-            *array = createArray(numEntries);
-            break;
-        }
-        case HASH: {
-            *hashTable = createTable(numEntries);
-            break;
-        }
-        case BINARY_TREE: {
-            *binaryTree = NULL;
-            break;
-        }
-        case HEAP: {
-            *heap = createHeap(numEntries);
-            break;
-        }
-        case LINKED_LIST: {
-            *linkedList = NULL;
-            break;
-        }
-        default:
-            printf("Unknown type: %i\n", type);
-            return 0;
-    }
+
     FILE *fin = fopen(path, "rt");
     if (!fin) {
         printf("\nMissing file: %s\n", path);
