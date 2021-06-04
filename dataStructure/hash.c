@@ -15,22 +15,25 @@ hash createTable(int capacity) {
     }
     return tabla;
 }
- long long int hashPos(Name name){
-    int numOfLett=(strlen(name.firstName)+strlen(name.lastName));
-    long long int result=0;
-    char *strName=(char*)malloc((numOfLett+1)*sizeof(char));
-    strName=strcat(name.firstName,name.lastName);
+
+int hashPos(Name name) {
+    int numOfLett = (int) (strlen(name.firstName) + strlen(name.lastName));
+    int result = 0;
+    char *strName = (char *) malloc((numOfLett + 1) * sizeof(char));
+    strcpy(strName, name.firstName);
+    strcat(strName, name.lastName);
     numOfLett--;
-    while(numOfLett>=0){
-        result+=(int)strName[numOfLett]*pow(2,numOfLett);
+    while (numOfLett >= 0) {
+        result += (int) strName[numOfLett] * (int) pow(2, numOfLett);
         numOfLett--;
     }
     return result;
 
 }
+
 void insertTable(hash *tabla, Name name) {
     int j, i = 0;
-    long long int sz = hashPos(name);
+    int sz = hashPos(name);
     if ((*tabla).currentSize == (*tabla).capacity) {
         printf("Hash is full");
         return;
@@ -47,7 +50,7 @@ void insertTable(hash *tabla, Name name) {
 
 void deleteHash(hash *table, Name name) {
     int j, i = 0;
-    int sz = strlen(name.firstName) + strlen(name.lastName);
+    int sz = hashPos(name);
     do {
         j = (sz + i) % (*table).capacity;
         if ((*table).names[j].firstName != NULL) {
@@ -66,7 +69,7 @@ void deleteHash(hash *table, Name name) {
 
 bool searchHash(hash *tabla, Name name) {
     int j, i = 0;
-    int sz = strlen(name.firstName) + strlen(name.lastName);
+    int sz = hashPos(name);
     do {
         j = (sz + i) % (*tabla).capacity;
         if ((*tabla).names[j].firstName != NULL) {
