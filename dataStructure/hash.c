@@ -3,6 +3,7 @@
 //
 
 #include "hash.h"
+#include <math.h>
 
 hash createTable(int capacity) {
     hash tabla;
@@ -14,10 +15,22 @@ hash createTable(int capacity) {
     }
     return tabla;
 }
+ long long int hashPos(Name name){
+    int numOfLett=(strlen(name.firstName)+strlen(name.lastName));
+    long long int result=0;
+    char *strName=(char*)malloc((numOfLett+1)*sizeof(char));
+    strName=strcat(name.firstName,name.lastName);
+    numOfLett--;
+    while(numOfLett>=0){
+        result+=(int)strName[numOfLett]*pow(2,numOfLett);
+        numOfLett--;
+    }
+    return result;
 
+}
 void insertTable(hash *tabla, Name name) {
     int j, i = 0;
-    int sz = strlen(name.firstName) + strlen(name.lastName);
+    long long int sz = hashPos(name);
     if ((*tabla).currentSize == (*tabla).capacity) {
         printf("Hash is full");
         return;

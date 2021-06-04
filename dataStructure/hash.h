@@ -11,6 +11,7 @@ typedef struct hashtable{
     int currentSize;
     int capacity;
 }hash;
+long long int hashPos(Name);
 hash createTable(int );
 void insertTable(hash *, Name );
 bool searchHash(hash *, Name );
